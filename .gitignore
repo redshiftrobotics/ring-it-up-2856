@@ -8,5 +8,4 @@
 
 # Compiled Static libraries
 *.lai
-*.la
 *.a
