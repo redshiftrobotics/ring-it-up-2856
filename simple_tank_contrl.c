@@ -18,12 +18,14 @@ task main()
 		rightpower = joystick.joy1_y2;		//read joystick y values (both sticks)
 		leftpower = joystick.joy1_y1;
 
-		if(abs(rightpower) < 9)			//deadband with threshold of 8
+		if(abs(rightpower) < 9)			//deadband with threshold of 9
+
 			{
 					rightpower = 0;
 			}
 
-		if(abs(leftpower) < 9)			//deadband with threshold of 8
+		if(abs(leftpower) < 9)			//deadband with threshold of 9
+
 			{
 				leftpower = 0;
 			}
