@@ -11,12 +11,12 @@ int rightpower = 0;
 
 task main()
 {
-	getJoystickSettings(joystick);
 
 	while(true)  //infinite loop
 	{
-		rightpower = joystick.joy1_y2;		//read joystick y values (both sticks)
-		leftpower = joystick.joy1_y1;
+		getJoystickSettings(joystick);
+		rightpower = joystick.joy1_y2*100/128;		//read joystick y values (both sticks)
+		leftpower = joystick.joy1_y1*100/128;
 
 		if(abs(rightpower) < 8)			//deadband with threshold of 8
 
